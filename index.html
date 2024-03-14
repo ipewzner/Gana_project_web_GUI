@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serial Port Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    
+    <div id="progressBar" class="progress">
+        <p>Progress:</p>
+        <progress id="progress" class="progress-bar" value="0" max="100"></progress>
+    </div>
+
+    <div class="system">
+        <h1>Control system</h1>
+        <div class="controler">
+
+            <div class="left-container">
+                <div id="connection">
+                    <button id="connectButton" onclick="connectButton()">Connect</button>
+                    <button id="disconnectButton" disabled onclick="disconnectButton()"">Disconnect</button>
+                </div>
+
+                <form id="controlForm">
+
+
+                    <div class="sensor-control-container">
+
+                        <p>LED's</p>
+                        <div class="control-row ">
+                            <button id="whiteLed_button" disabled>White LED's ON</button>
+                            <button id="blueLed_button" disabled>Blue LED's ON</button>
+                        </div>
+
+                        <hr class="rounded">
+
+                        <p>Color sensor</p>
+
+                        <div class="control-row ">
+                            <label for="sensativity">Sensitivity:</label>
+                            <div>
+                                <button id="sensativity_button" disabled >HIGH</button>
+                            </div>
+                        </div>
+
+                        <div class="control-row ">
+                            <label for="Integration">Integration time:</label>
+                            <div>
+                                <input type="number" name="Integration" class="numInput" id="Integration_Input" min="0"
+                                    max="256" value="100">
+                            </div>
+                        </div>
+
+                        <hr class="rounded">
+
+                        <p>Experiment</p>
+
+
+                        <div class="control-row ">
+                            <label for="numOfSamples">number of samples:</label>
+                            <div>
+                                <input type="number" name="numOfSamples" class="numInput" id="numOfSamples_Input" min="0"
+                                    max="100" value="10">
+                            </div>
+                        </div>
+                    <div class="space"></div>
+                        <button id="startTestButton" class="startTestButton" disabled>Stert test</button>
+
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="right-container">
+
+                <h2>Test result</h2>
+
+                <div class="red_container color_container">
+                    <p>Red:</p>
+                    <div class="number_container">
+                        <p id="result_red">0</p>
+                    </div>
+                </div>
+
+                <div class="green_container color_container">
+                    <p>Green:</p>
+                    <div class="number_container">
+                        <p id="result_green">0 </p>
+                    </div>
+                </div>
+
+                <div class="blue_container color_container">
+                    <p>Blue:</p>
+                    <div class="number_container">
+                        <p id="result_blue">0</p>
+                    </div>
+                </div>
+
+
+                <div class="space"></div>
+                <div class="result_text_container">
+                    <p>Result:</p>
+
+                    <div class="result_container">
+                        <p id="result">0</p>
+                        <span class="material-symbols-outlined" onclick="copyText()" onmouseover="handle_mouseover()"
+                            onmouseout="handle_mouseout()">
+                            content_copy
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

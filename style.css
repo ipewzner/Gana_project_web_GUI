@@ -1,0 +1,283 @@
+.system {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 0;
+    gap: 20px;
+    height: calc(100vh - 40px);
+}
+
+hr.rounded {
+    border-radius: 5px;
+    width: 100%;
+    border-top: 3px solid #bbb;
+}
+
+h1 {
+    padding-top: 10px;
+    margin: 0;
+    padding-inline-start: 20px;
+}
+
+.controler {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 20px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+
+
+}
+
+h2 {
+
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.left-container>div {
+    display: flex;
+    gap: 20px;
+    /* Adjust the gap as needed */
+}
+
+
+#messageInput {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+}
+
+.numInput {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    min-width: 100px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    /* Reduce opacity for disabled state */
+    cursor: not-allowed;
+    /* Change cursor to not-allowed */
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+
+.sensor-control-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(139, 212, 173);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.control-row>label {
+    margin: 10px;
+
+    padding-inline-start: 0px;
+}
+
+.control-row {
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.startTestButton {
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.color_container {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-inline-start: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.red_container {
+    background-color: rgb(244, 150, 150);
+}
+
+.green_container {
+    background-color: rgb(159, 245, 199);
+}
+
+.blue_container {
+    background-color: rgb(182, 188, 249);
+}
+
+.number_container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100px;
+    justify-content: center;
+
+}
+
+.result_text_container {
+    background-color: rgb(182, 188, 249);
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-inline-start: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.result_container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 80%;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+
+
+.result_container p {
+    margin: 0;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+
+}
+
+.space {
+    height: 100%;
+}
+
+.copy-btn {
+    /*background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/**/
+
+
+
+.material-symbols-outlined {
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s, font-size 0.3s;
+    /* Added transition for font-size */
+}
+
+.material-symbols-outlined:hover {
+    color: blue;
+    /* Changed color to blue */
+    font-size: 24px;
+    /* Increase font size on hover */
+}
+
+
+
+.progress {
+    position: fixed;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-inline-start: 20px;
+}
+
+.progress>p {
+    font-size: 24px;
+    padding: 5px;
+
+}
+
+.progress-bar {
+    width: 80%;
+    height: 50px;
+}
