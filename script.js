@@ -134,14 +134,14 @@ document.getElementById("whiteLed_button").addEventListener("click", function ()
     event.preventDefault();
     this.classList.toggle("on");
     this.classList.toggle("off");
-    this.textContent = this.classList.contains("on") ? "White LED's OFF" : "White LED's ON";
+    this.textContent = this.classList.contains("on") ? "White LEDs OFF" : "White LEDs ON";
 });
 
 document.getElementById("blueLed_button").addEventListener("click", function () {
     event.preventDefault();
     this.classList.toggle("on");
     this.classList.toggle("off");
-    this.textContent = this.classList.contains("on") ? "Blue LED's OFF" : "Blue LED's ON";
+    this.textContent = this.classList.contains("on") ? "Violet LEDs OFF" : "Violet LEDs ON";
 });
 
 document.getElementById("sensativity_button").addEventListener("click", function () {
