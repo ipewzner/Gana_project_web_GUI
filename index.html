@@ -7,6 +7,8 @@
     <title>Serial Port Test</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet"
@@ -21,13 +23,13 @@
     </div>
 
     <div class="system">
-        <h1>Control system</h1>
+        <h1>Control System</h1>
         <div class="controler">
 
             <div class="left-container">
                 <div id="connection">
                     <button id="connectButton" onclick="connectButton()">Connect</button>
-                    <button id="disconnectButton" disabled onclick="disconnectButton()"">Disconnect</button>
+                    <button id="disconnectButton" disabled onclick="disconnectButton()">Disconnect</button>
                 </div>
 
                 <form id="controlForm">
@@ -35,15 +37,15 @@
 
                     <div class="sensor-control-container">
 
-                        <p>LED's</p>
+                        <p>LEDs</p>
                         <div class="control-row ">
                             <button id="whiteLed_button" disabled>White LED's ON</button>
-                            <button id="blueLed_button" disabled>Blue LED's ON</button>
+                            <button id="blueLed_button" disabled>Violet LED's ON</button>
                         </div>
 
                         <hr class="rounded">
 
-                        <p>Color sensor</p>
+                        <p>Color Sensor</p>
 
                         <div class="control-row ">
                             <label for="sensativity">Sensitivity:</label>
@@ -53,7 +55,7 @@
                         </div>
 
                         <div class="control-row ">
-                            <label for="Integration">Integration time:</label>
+                            <label for="Integration">Integration Time:</label>
                             <div>
                                 <input type="number" name="Integration" class="numInput" id="Integration_Input" min="0"
                                     max="256" value="100">
@@ -66,14 +68,14 @@
 
 
                         <div class="control-row ">
-                            <label for="numOfSamples">number of samples:</label>
+                            <label for="numOfSamples">Number of Samples:</label>
                             <div>
                                 <input type="number" name="numOfSamples" class="numInput" id="numOfSamples_Input" min="0"
                                     max="100" value="10">
                             </div>
                         </div>
                     <div class="space"></div>
-                        <button id="startTestButton" class="startTestButton" disabled>Stert test</button>
+                        <button id="startTestButton" class="startTestButton" disabled>Start Test</button>
 
                     </div>
                 </form>
@@ -82,7 +84,7 @@
 
             <div class="right-container">
 
-                <h2>Test result</h2>
+                <h2>Test Result</h2>
 
                 <div class="red_container color_container">
                     <p>Red:</p>

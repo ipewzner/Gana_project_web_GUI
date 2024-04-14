@@ -73,10 +73,19 @@ async function readLoop() {
                             console.log(">line>> " + line)
 
                             if (/^p:([0-9]{1,4}).*/.test(line)) {
-                                const progress = parseInt(line.match(/^p:([0-9]{1,4}).*/)[1]);
-                                console.log(">>> " + progress)
 
-                                handleProgress(progress, 10);
+                                 // Split the string into parts based on '/'
+                                let parts = line.split('/');
+    
+                                // Extract the integers from the parts
+                                const progress = parseInt(parts[0].split(':')[1], 10);
+                                const totel = parseInt(parts[1], 10); 
+
+                                handleProgress(progress, totel);
+
+                                //const progress = parseInt(line.match(/^p:([0-9]{1,4}).*/)[1]);
+                                //console.log(">>> " + progress)
+                                //handleProgress(progress, 10);
                             } else {
                                 const jsonData = JSON.parse(line);
                                 console.log("JSON data:", jsonData);

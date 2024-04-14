@@ -1,3 +1,8 @@
+
+body {
+    font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with the font you want to use */
+}
+
 .system {
     display: flex;
     flex-direction: column;
@@ -36,7 +41,6 @@ h1 {
     border-radius: 15px;
     padding: 20px;
     gap: 20px;
-    
 }
 
 .right-container {
@@ -47,12 +51,9 @@ h1 {
     border-radius: 15px;
     padding: 20px;
     gap: 20px;
-
-
 }
 
 h2 {
-
     padding: 0;
     margin: 0;
     font-size: 20px;
@@ -131,16 +132,17 @@ p {
 
 .control-row>label {
     margin: 10px;
-
     padding-inline-start: 0px;
 }
 
 .control-row {
     display: flex;
     /*justify-content: space-between;*/
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin-inline-end: 20px;
+    margin-inline-start: 20px;
+
 }
 
 .startTestButton {
