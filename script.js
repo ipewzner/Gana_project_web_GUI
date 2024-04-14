@@ -114,7 +114,8 @@ async function readLoop() {
                         const time = t// new Date(t);
                         addDataPoint(time, r, g, b, thickness);
                     }
-*/
+                    */
+
                     // Keep the incomplete line for the next iteration
                     receivedData = lines[lines.length - 1];
                 }
@@ -170,6 +171,7 @@ async function send(message) {
     }
 }
 
+  
 //-------- result copy ---------
 
 function copyText() {
@@ -266,3 +268,5 @@ function handleProgress(data, total) {
         closeProgressBar();
     }
 }
+
+

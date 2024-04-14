@@ -83,11 +83,16 @@ h2 {
     color: white;
 }
 
+.LEDs-p{
+    padding-bottom: 10px;
+}
+
 .numInput {
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    width: 78px;
 
 }
 
